@@ -1,0 +1,137 @@
+/* for desktop css */
+.col-1  {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/* navber design starts here */
+.nav-logo{
+ text-align: left;
+}
+.nav-heading h1{
+    text-align: right;
+}
+.nav-menu{
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.nav-menu a{
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px;
+    background-color: transparent;
+}
+.nav-menu a:hover{
+    color: white;
+    background-color: #40aa36;
+}
+/* navber design ends here */
+
+/* profile design starts from here */
+.profile .top-rose-icon{
+    position: absolute;
+    right: 100px;
+    width: 120px;
+    transition: width 2s, transform 2s;
+}
+
+.profile .top-rose-icon:hover{
+     width: 145px;
+}
+
+.profile-desc p{
+    color: grey;
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.profile .bottom-rose-icon{
+    position: absolute;
+    left: 100px;
+    width: 120px;
+    transition: transform 2s;
+}
+
+.profile .bottom-rose-icon:hover{
+    width: 145px;
+}
+.profile::after{
+    content: " ";
+    display:table;
+    clear: both;
+}
+/* profile design starts from here */
+
+/* about me design starts from here */
+.aboutme-image{
+    margin-top: 100px;
+}
+
+.aboutme-image img{
+    height: 270px;
+    width: 250px;
+}
+
+.aboutme-desc p{
+    text-align: left;
+}
+/* about me design ends from here */
+
+/* Professional experience design starts here */
+.professional-experience{
+    padding: 1% 5%
+}
+/* Professional experience design ends here */
+
+/* Contact design ends here */
+.achievement{
+    padding-right: 50px;
+}
+
+.contact .dtl{
+    padding: 10px 118px ;
+}
+
+.contact .sms{
+    padding: 50px 90px;
+}
+
+.more-contacts{
+    position: relative;
+}
+
+.social-media{
+    position: absolute;
+    margin-top: 200px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+/* Contact design ends here */
+
+/* footer menu design starts from here */
+.footer-menu{
+    margin-top: 12px;
+}
+
+.footer-menu a{
+    display: inline;
+    margin: 10px;
+}
+
+.footer-desc{
+    text-align: right;
+}
+/* footer menu design ends here */
+

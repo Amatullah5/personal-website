@@ -1,0 +1,507 @@
+*{
+    box-sizing: border-box;
+    font-family: "Fira Sans", sans-serif;
+}
+
+body{
+    margin: 0;
+}
+
+h1{
+    font-size: 3rem;
+    text-align: center;
+}
+
+h2{
+    font-size: 2rem;
+    text-align: center;
+}
+
+a{
+    color:white;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+p{
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.under-line{
+    border: 2px solid white;
+    border-bottom: none;
+    margin: 20px auto;
+    width: 280px;
+}
+   
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+
+/* for mobile */
+[class*="col-"]{
+    width: 100%;
+}
+
+/* navber design starts here */
+.navber{
+    background-color: aqua;
+    padding: 1% 7%;
+    text-align: center;
+}
+.navber h1{
+    color: white;
+    margin: 0;
+    padding-top: 10px;
+    
+}
+.nav-menu{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+.nav-menu a{
+    background-color: #40868b;
+    border-radius: 50px;
+    margin: 7px 0px;
+    padding: 10px;
+}
+.nav-menu a:hover{
+    background-color: #40aa36;
+}
+
+.navber::after{
+    content: " ";
+    display: table;
+    clear: both;
+}
+/* navber design ends here */
+
+/* profile design starts from here */
+.profile{
+    padding: 130px 10px;
+    position: relative;
+    text-align: center;
+    background-color: #40aa36;
+}
+.profile .top-rose-icon{
+    position: absolute;
+    right: 60px;
+    top: 25px;
+    transition: transform 2s;
+}
+
+.profile .top-rose-icon:hover{
+     transform: rotate(360deg);
+}
+
+.profile-desc h1{
+    font-family: "Satisfy",cursive;
+    font-size: 3rem;
+    padding-top: 10px;
+}
+
+.profile-desc p{
+    color: grey;
+    margin: 0 auto 20px auto;
+    padding-bottom: 30px;
+    text-align: center;
+    width: 90%;
+}
+
+.profile .bottom-rose-icon{
+    position: absolute;
+    left: 60px;
+    bottom: 25px;
+    transition: transform 2s;
+}
+
+.profile .bottom-rose-icon:hover{
+     transform: rotate(360deg);
+}
+/* profile design ends here */
+
+/* about-me design starts here */
+.about-me{
+    background-color: forestgreen;
+    padding:1% 7%;
+    color:white;
+    text-align: center;
+    font-family: "Montserrat",Sans-serif;
+}
+
+.about-me::after{
+    clear: both;
+    display: table;
+    content: " ";
+}
+
+.aboutme-image img{
+    border: 5px solid;
+    border-radius: 5000px;
+    height: 220px;
+    width: 200px;
+    transition: 1.5s;
+}
+
+.aboutme-image img:hover{
+    transform: scale(1.1);
+}
+
+.image-name{
+    color:white;
+    font-weight: bold;
+}
+
+.about-me .image-name:hover{
+    background-color:white;
+    color:black;
+}
+
+.about-me p{
+    text-align: center;
+    font-weight: bold;
+}
+
+.about-me p:hover{
+    color:black;
+    border-width: 50px;
+    background-color:white;
+    border-radius: 5px;
+}
+
+.about-me a.phone:hover{
+    color:black;
+}
+
+.about-me a.website:hover{
+    color:black;
+}
+
+.about-me a.email:hover{
+    color:black;
+}
+
+.about-me a{
+    font-size: 1.2rem;
+}
+
+.about-me .my-page{
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 60px;
+    padding: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-align: center;
+    margin: 10px;
+}
+/* about-me design ends here */
+
+/* Professional experience design starts here */
+.professional-experience{
+    padding: 1% 0%;
+}
+
+.professional-experience .card{
+    background-color: yellow;
+    border-radius: 40px;
+    padding: 10px;
+    transition: 0.3s;
+    height: 700px;
+}
+
+.professional-experience .card:hover{
+    box-shadow: 0 6px 10px 5px black;
+}
+
+.card-icon{
+    text-align: center;
+}
+
+.card-icon img{
+    margin-top: 20px;
+    width: 100px;
+}
+
+.rounded-img{
+    border: 5px solid white;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.card-title h2{
+    background-color:white;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.Education .details{
+    color: gray;
+}
+
+.skills-desc{
+    padding-right: 45px;
+}
+
+.skills-desc li{
+    list-style: none;
+    font-weight: bold;
+    margin: 30px 10px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.skills-desc li::before{
+    content: " ";
+    position: absolute;
+    background-color: white;
+    top: calc(100% + 5px);
+    width: 100%;
+    height: 10px;
+    left: 0;
+    border-radius: 1000px;
+}
+
+.skills-desc li::after{
+    content: " ";
+    position: absolute;
+    background-color: green;
+    top: calc(100% + 5px);
+    width: 0;
+    height: 10px;
+    left: 0;
+    border-radius: 1000px;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: calc(1);
+}
+
+.skills-desc li.html::after{
+    animation-name: html;
+}
+
+@keyframes html{
+    to{
+        width: 100%;
+    }
+}
+
+.skills-desc li.css::after{
+    animation-name: css;
+}
+
+@keyframes css{
+    to{
+        width: 100%;
+    }
+}
+
+.skills-desc li.javascript::after{
+    animation-name: javascript;
+}
+
+
+@keyframes javascript{
+    to{
+        width: 100%;
+    }
+}
+
+.skills-desc li.versionControl::after{
+    animation-name: versionControl;
+}
+
+@keyframes versionControl{
+    to{
+        width: 100%;
+    }
+}
+
+.skills-desc li.bootstrap::after{
+    animation-name: bootstrap;
+}
+
+@keyframes bootstrap{
+    to{
+        width: 100%;
+    }
+}
+
+.skills-desc li.adv::after{
+    animation-name: adv;
+}
+
+@keyframes adv{
+    to{
+        width: 100%;
+    }
+}
+
+.skills-desc li.lang::after{
+    animation-name: lang;
+}
+
+@keyframes lang{
+    to{
+        width: 100%;
+    }
+}
+
+.youtube{
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 2px;
+    margin: 0px;
+    width: 24px;
+    background-color: white;
+    transition: .4s;
+}
+
+.professional-experience::after{
+    display: table;
+    content: " ";
+    clear: both;
+}
+/* Professional experience design starts here */
+.contact-me{
+    padding: 1% 7%;
+    background-color: darkorange;
+    color: white;
+    text-align: center;
+}
+
+.conttact{
+    text-align: center;
+}
+
+.contact-me .hrtl{
+    color: white;
+    background-color: white;
+    padding: 1px 5px;
+    width: 280px;
+    border-radius: 10px;
+}
+
+.contact input textarea{
+      width: 100%;
+      padding: 30px;
+      font-size: 1rem;
+      text-align: center;
+      border: white;
+      border-radius: 5px;
+      resize: none;
+}
+
+.contact .sms{
+    border-radius: 20px;
+    padding: 50px 170px;
+}
+
+.contact .dtl{
+    border-radius: 6px;
+    padding: 10px 100px;
+}
+
+.contact .btn{
+    border: none;
+    border-radius: 10px;
+    background-color:white;
+    color: black;
+    cursor: pointer;
+    padding: 10px;
+    margin: 5px;
+    width: 100px;
+    font-weight: bold;
+}
+
+.contact .btn:hover{
+    color: white;
+    background-color: gray;
+}
+
+
+.more-contacts{
+    text-align: center;
+}
+
+.icon-style{
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 32px;
+    padding: 5px;
+    margin: 10px;
+    width: 50px;
+    background-color: white;
+    transition: .4s;
+}
+
+.icon-style:hover{
+    transform: scale(1.2);
+    background-color: gray;
+}
+
+.contact-me::after{
+    display: table;
+    content: " ";
+    clear: both;
+}
+/* contact design starts from here */
+
+/* footer design starts from here */
+.footer{
+    background-color: rgb(165,164,164);
+    color: white;
+    padding: 50px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.footer-menu a{
+    display: block;
+    margin: 15px 0;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.footer-menu a:hover{
+    color:black;
+    background-color: white;
+}
+
+.footer-desc .arrow-style{
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 32px;
+    padding: 5px;
+    margin: 10px;
+    width: 50px;
+    background-color: white;
+    transition: .4s;
+}
+
+.footer-desc .arrow-style:hover{
+    transform: scale(1.2);
+    background-color: gray;
+}
+
+
+.footer::after{
+    display: table;
+    content: " ";
+    clear: both;
+}
+/* footer design ends from here */
